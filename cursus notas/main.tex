@@ -137,6 +137,8 @@
 \renewcommand{\>}{\rangle}
 \newcommand\todo[1]{\textcolor{red}{#1}}
 
+\newcommand{\figuresvisualizationpath}{D:/projecten/syntra/git-repos/data-science-syntra-ab/04 data visualizatie/figures}
+
 % Shortcuts for inverse hyperbolic functions (and other operators with the same structure)
 \def\do#1{\csdef{#1}{\trigbraces{\operatorname{#1}}}}
 \docsvlist{
@@ -788,6 +790,172 @@ flagstyle/dr/.style 2 args={
 \end{tcolorbox}
 
 \newpage
+
+\section{Visualizing your results}
+In this chapter, we take a deeper look into data visualization. We start our discussion by motivating why data visualizations are important and a general remark on which type of visualizations you should use for which audience (something we regularly refer back to throughout the whole chapter). We then go through a list of the most common categories of data visualizations, these categories are:
+\begin{itemize}
+\item Statistical charts.
+\item Geospatial visualization.
+\item Time series visualization
+\item Network visualization.
+\item Hierarchical visualization.
+\item Interactive visualization.
+\item Flow visualization.
+\item Multidimensional visualization.
+\item Financial \& business visualization.
+\end{itemize}
+\begin{figure}
+\center
+\includegraphics[scale=0.2]{figures/visualizations/medical_visualization.jpg} 
+\caption{Example of data visualization in the medical sector.}\label{fig:datavis_medical}
+\end{figure}
+\begin{remark}
+These are \textit{categories} of data visualizations, each category is further subdivided into many more types. Moreover, there are still many (often topic specific) visualizations that we will not touch on (e.g.~medical visualization, see Figure \ref{fig:datavis_medical}). However, in most cases, you will be able to create an appropriate visual using one presented in this work, but you should always remain on the lookout for new \& alternative ways to visualize your data!
+\end{remark}
+
+\subsection{Motivation}
+In the realm of data science, information is abundant, but knowledge is priceless. Data visualization acts as the brushstroke that brings life to raw data, transforming it into a vivid and intuitive masterpiece. By leveraging the power of visual representation, data visualization enables us to unlock the true potential of our data, making complex concepts more accessible, patterns more discernible, and insights more compelling. In this section, we explore the options one has in visualizing data. As a data scientist/data analyst/machine learning engineer or whichever role in data, we spent days and days exploring data, developing models, testing hypotheses,... We are passionate about this work and appreciate the beauty in being able to predict the total number of passengers on a Boeing 747 with up to $98\%$ accuracy. However, in the end, all our hard work must generate \textit{business value}. In order for this to happen, people must be made aware of our work, its value and applicability. This mostly boils down to having many meetings and presentations where you want to create a mutual understanding of what the data tells us and how this story can help us create business value.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/visualizations/01table.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/visualizations/01heatmap.png}
+  \end{minipage}
+  \caption{We show the number of passengers passing by a number of locations at the airport per 1 hour slot. On the left numbers are shown without and on the right with heatmap.}
+  \label{fig:heatmap_example}
+\end{figure}
+
+\begin{example}
+We often need to create schedules in order to process a certain number of people/things in a day (e.g.~number of passengers at the airport, number of visitors arriving to a theme park, number of orders coming in at Amazon, ...). Let's look at the example of looking at the expected number of passengers at the different locations of an airport. We want to generate a quick overview of these numbers while still displaying all information a decision maker needs. The easiest way to do this is simply by putting all numbers for a specific day into a table, a quick and simple way to make this table easier to read without losing information is to round all numbers to the closest integer and using a heatmap to make high values stand out more.
+
+We clearly observe that there are 2 peaks in number of passengers. Given the data, one could supplement this heatmap with historic information on these peaks and the amount of personnel that was required to handle those peaks. This can then be weighed against the peaks we see in this heatmap.
+\end{example}
+There are many reasons why data visualization is important, some of them are:
+\begin{itemize}
+\item \textbf{Clarity in Complexity}:
+Data, in its raw form, often appears as an intricate web of numbers, symbols, and patterns. Unveiling its inherent complexity can be a daunting task. However, data visualization rises to the challenge, offering a visual narrative that simplifies the complexity and enhances our understanding. By transforming abstract numbers into intuitive charts, graphs, and infographics, data visualization provides clarity and reveals the underlying story within the data. It enables us to grasp intricate relationships, spot trends, and identify anomalies at a glance, empowering us to make more informed interpretations.
+\item \textbf{Insightful Communication}:
+Data holds tremendous insights, but these insights are of little value if they remain hidden within spreadsheets and databases. Data visualization acts as a bridge between the data and its audience, facilitating effective communication of information, ideas, and discoveries. By presenting data in visually appealing and interactive formats, it engages the viewer's attention and facilitates a deeper understanding of the underlying message. Whether it's presenting research findings, conveying business metrics, or explaining scientific concepts, data visualization empowers us to communicate complex ideas with clarity, brevity, and impact. There are many meetings in life that could be replaced by a couple of good visualizations.
+\item \textbf{Decision-Making Catalyst}:
+In a world driven by data, making informed decisions is critical. Data visualization plays a pivotal role in this process by transforming data into actionable insights. By presenting data in visual formats that highlight key trends, comparisons, and patterns, it enables decision-makers to discern relevant information swiftly. Interactive dashboards and real-time visualizations further enhance the decision-making process by providing dynamic and up-to-date views of critical metrics. Whether it's optimizing business strategies, improving operational efficiency, or identifying opportunities, data visualization acts as a catalyst, empowering decision-makers to act with confidence and precision.
+\item \textbf{Driving Innovation}:
+Innovation thrives on exploration and the ability to perceive connections where others see chaos. Data visualization fuels this spirit of innovation by enabling us to spot patterns, identify gaps, and make creative leaps. By visualizing data from diverse sources and perspectives, it fosters interdisciplinary collaboration, encouraging experts from different domains to contribute their unique insights. Visualization tools, such as network graphs and geographic mapping, unravel hidden relationships and expose untapped opportunities. With data visualization as our guide, we navigate uncharted territories and push the boundaries of what is possible.
+\end{itemize}
+
+\subsection{Some general (unwritten) rules in data visualization}
+Some golden rules which you should always keep in mind when creating data visualizations.
+
+\begin{itemize}
+\item Understand your audience and objectives: Clearly define your target audience and the purpose of the visualization. Understand what insights or messages you want to convey and tailor your visualization accordingly.
+
+\item Choose the appropriate visualization type: Select the visualization type that best suits your data and goals. Consider factors such as the data structure, relationships, and the type of analysis you want to perform.
+
+\item Keep it simple and uncluttered: Avoid visual clutter and unnecessary complexity. Simplify your visualizations by removing irrelevant elements and focusing on the key information. Strive for a clean and minimal design that enhances clarity and readability.
+
+\item Use color strategically: Choose colors purposefully to highlight important information, create visual contrast, and guide the viewer's attention. Maintain consistency and ensure that color choices are accessible and meaningful. Consider color-blindness and use color palettes that accommodate different types of color vision. In general: only add additional colors when you feel like this provides additional information for your audience (otherwise the color is a form of clutter).
+
+\item Ensure appropriate scaling: Set the scale of your visualization appropriately to accurately represent the data. Avoid distorting or misleading interpretations by using appropriate axis scales and starting axes from zero, unless there is a specific reason to do otherwise.
+
+\item Label clearly and provide context: Labels are crucial for conveying information accurately. Clearly label data points, axes, and any relevant components of the visualization. Provide additional context through captions, titles, or annotations to help viewers interpret the data correctly.
+
+\item Use appropriate data order and grouping: Arrange the data in a logical order to facilitate understanding. Group related data together to highlight patterns or comparisons. Consider sorting data based on magnitude, time, or any other relevant factor to support meaningful analysis.
+
+\item Incorporate interactive elements (if applicable): If your visualization is interactive, provide intuitive controls or tooltips that allow users to explore the data and gain deeper insights. Interactivity can enhance engagement and enable users to interact with the visualization according to their specific interests or queries.
+
+\item Validate and iterate: Test your visualization with a sample audience or colleagues to gather feedback and identify areas for improvement. Iterate and refine your visualization based on the feedback received to enhance its effectiveness.
+\end{itemize}
+
+\subsection{Statistical charts}
+When it comes to displaying statistical charts, one crucial decision is whether to use total numbers or distributional numbers. Both approaches have their merits and can provide valuable insights depending on the context and purpose of the chart. Let's explore each option further.
+
+\begin{figure}
+\center
+\includegraphics[scale=0.3]{\figuresvisualizationpath/population.png} 
+\caption{Example of data visualization in the medical sector.}\label{fig:datavispopulation_cities_bar}
+\end{figure}
+Using total numbers in statistical charts involves presenting the absolute values or counts of a particular variable. This approach offers a straightforward representation of the data and allows viewers to understand the actual quantities involved. Total numbers are particularly useful when the goal is to convey the magnitude or scale of a phenomenon. For example, if you're comparing the population sizes of different cities, displaying the total numbers can help in easily identifying which cities have larger or smaller populations (see Figure \ref{fig:population_cities_bar}).
+
+\begin{figure}
+\center
+\includegraphics[scale=0.3]{\figuresvisualizationpath/market_shares.png}  
+\caption{Example of some data visualization in the energy sector.}\label{fig:datavis_market_shares}
+\end{figure}
+
+On the other hand, distributional numbers focus on the proportions or percentages within different categories or groups. Instead of presenting raw counts, this approach highlights the relative distribution of values across the data set. Distributional numbers are valuable when the emphasis is on understanding patterns, trends, or relationships between different groups. For instance, if you're analyzing the market share of various companies within a specific industry, using distributional numbers can reveal the relative dominance or competitiveness of each player. An example of this is show in Figure \ref{fig:population_cities_bar}.
+
+The choice between total numbers and distributional numbers depends on the specific objectives and audience of the statistical chart. If you aim to provide a comprehensive view of the data and prioritize a clear understanding of the overall size or quantity, total numbers may be more appropriate. On the other hand, if your intention is to highlight the relative proportions or share of different components within a dataset, distributional numbers can offer a more insightful representation.
+
+It's worth noting that in many cases, a combination of both approaches can provide a well-rounded depiction of the data. For instance, you can use a chart that presents the total numbers as well as accompanying percentages or proportions within each category. This approach enables viewers to grasp the absolute values while also understanding the relative significance of different groups.
+
+Ultimately, the choice between total numbers and distributional numbers in statistical charts should align with the goals of your analysis and the message you want to convey. By carefully considering the context, audience, and objectives, you can select the most suitable approach to effectively communicate your data-driven insights.
+
+When displaying the values in a distributional sense, you should first be aware of the question whether the distribution your data is coming from is discrete or continuous. Let us first dive into the details on what each type is and how these type of distributions are defined.
+
+\subsubsection{Random variables}
+A random variable is a mathematical concept used in probability theory and statistics to represent an uncertain quantity or outcome. It is a variable whose value is determined by the outcome of a random event, such as the roll of a die, the flip of a coin, or the measurement of a physical quantity subject to random variation.
+
+Formally, a random variable is defined as a function that assigns a numerical value to each possible outcome of a random experiment. The set of all possible values that a random variable can take is called its sample space, and the probability distribution of the random variable describes the likelihood of each value occurring.
+
+There are two types of random variables: discrete and continuous.
+
+\subsubsection*{Discrete Random Variables}
+A discrete distribution is a probability distribution that describes the probabilities of a random variable taking on specific values. In other words, it represents the likelihood of each possible outcome in a discrete set of values. Unlike continuous distributions, which can take on any value within a range, discrete distributions have a countable set of possible outcomes. These values can either be categorical (such as companies, gender, ...) or discrete numbers (such as the number of eyes on a die, daily production of smartphones, ...). These distributions are defined by assigning a probability to each possible outcome.
+
+\remark{In the example of Figure \ref{fig:population_cities_bar}, one could argue that the random variable we are looking at is \textit{total population} and it takes on the given values for the different cities. Alternatively, if we were only interested in the population of Madrid, we could define our random variable as the population of Madrid and the value of 3.3 million is one observation from this value at a specific point in time. We could then argue that it might be of interest to visualize this total value as a function of time and look at that distribution.}
+
+\subsubsection*{Continuous Random Variables}
+A continuous random variable can take any value within a certain range or interval. For example, the height of a person, the time it takes for a car to travel a certain distance and the market share of Engie at different points in time are continuous random variables.
+
+\subsubsection{Bar charts}
+Bar charts are commonly used for visualizing categorical or discrete data and displaying comparisons between different categories or groups. They are particularly effective in representing data that can be organized into distinct categories or groups, such as survey responses, sales figures, population distribution, and frequency counts.
+
+Here are some common uses of bar charts:
+\begin{itemize}
+\item \textbf{Data Comparison}: Bar charts are ideal for comparing the values or frequencies of different categories. The length of each bar represents the quantity or magnitude of the variable being measured, allowing for easy visual comparison. This makes bar charts useful for analyzing data trends, identifying patterns, and drawing insights.
+
+\item \textbf{Data Distribution}: Bar charts can show the distribution of data across categories or groups. Each category is represented by a separate bar, and the height of the bar indicates the frequency, count, or proportion associated with that category. This helps in understanding the distributional characteristics of the data.
+
+\item \textbf{Data Representation}: Bar charts provide a clear and concise way to present data to an audience. They are easy to understand and interpret, making them suitable for conveying information in presentations, reports, and publications.
+
+\item \textbf{Data Exploration}: Bar charts can be used as an exploratory tool to identify patterns, outliers, or anomalies in the data. By visualizing the data in a bar chart, you can quickly spot variations or discrepancies between different categories, which may lead to further investigation or analysis.
+
+\item \textbf{Data Comparison over Time}: Bar charts can also be used to compare data across different time periods. By arranging bars chronologically, you can observe changes or trends in the data over time. This is particularly useful for tracking progress, analyzing historical data, or identifying seasonal patterns.
+\end{itemize}
+
+Overall, bar charts provide a simple and effective way to display and analyze categorical data, making them a popular choice for data visualization and communication purposes. As such, a number of different types of bar charts have been developed. Some general tips to keep in mind when creating a bar chart:
+\begin{itemize}
+\item Choose appropriate colors: It's recommended to use the same colors for similar categories while using contrasting colors between sufficiently different categories. Avoid using colors that may convey unintended meaning or bias. In the example of Figure \ref{fig:datavis_market_shares}, we used a single color for all actual companies and we \textit{greyed out} the \textquotedblleft Other\textquotedblright  category.
+
+\item Maintain a logical data order: Arrange the bars in a logical and meaningful order to facilitate easy comprehension. Typically, it is best to sort the categories in ascending or descending order based on the variable being measured. This helps in identifying patterns, trends, or outliers more effectively.
+
+\item Avoid excessive clutter: Keep the design clean and uncluttered by removing unnecessary elements that may distract or confuse viewers. Minimize gridlines, borders, or background patterns if they do not add value to the chart. Focus on presenting the data in a clear and straightforward manner.
+
+\item Use appropriate scales: Ensure that the scale of the axes is appropriate for the data being represented. Avoid distorting the perception of data by using uneven or misleading scales. Start the y-axis (vertical axis) from zero unless there is a specific reason to use a different baseline.
+\end{itemize}
+
+\subsubsection*{Vertical bar charts}
+This is the most common type of bar chart, where the bars are displayed vertically along the y-axis. Each bar represents a category or group, and the length of the bar corresponds to the value or frequency associated with that category. Vertical bar charts are useful for comparing data across different categories or groups. We already had an example of this type of bar charts in Figure \ref{fig:datavispopulation_cities_bar}. Some things to keep in mind when creating this type of bar chart
+
+\subsubsection{Horizontal bar charts}
+In a horizontal bar chart, the bars are displayed horizontally along the x-axis. Like vertical bar charts, each bar represents a category or group, and the length of the bar indicates the value or frequency. Horizontal bar charts are often used when the category labels are long or when there are many categories to display.
+
+\subsubsection{Grouped bar charts}
+A grouped bar chart displays multiple sets of bars side by side, allowing for easy comparison between different groups. Each group represents a category, and within each group, there can be multiple bars representing subcategories or different variables. Grouped bar charts are useful for comparing values across multiple categories simultaneously. These can of course be either vertical or horizontal.
+
+\subsubsection{Stacked bar charts}
+In a stacked bar chart, the bars are stacked on top of each other, with each segment of the bar representing a subcategory or component. The total height of the bar represents the cumulative value or frequency of all the subcategories. Stacked bar charts are suitable for showing the composition or breakdown of a variable across different categories.
+
+\subsubsection{$100\%$ stacked bar charts}
+Similar to a stacked bar chart, a $100\%$ stacked bar chart also displays bars stacked on top of each other. However, the height of each bar is normalized to represent the relative proportion or percentage of each subcategory within the total. This type of chart is useful for comparing the relative contribution of different subcategories across categories.
+
+\subsubsection{Clustered bar charts}
+A clustered bar chart displays bars grouped together in clusters, with each cluster representing a category. Within each cluster, there can be multiple bars representing different variables or subcategories. Clustered bar charts are suitable for comparing values between different categories and within each category.
 
 \section{Statistics for Data Science}
 \todo{Insert drawings to explain math in data science and the whole pipeline pointing at where you use which math/skills.}

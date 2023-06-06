@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.18)  21 MAY 2023 09:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.18)  28 MAY 2023 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1804,8 +1804,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 75
-9.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 76
+1.
 
 (C:\Users\timH\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1819,24 +1819,24 @@ LaTeX Warning: Label `eq:RMSE_yhat@cref' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 759.
-LaTeX Font Info:    ... okay on input line 759.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 759.
-LaTeX Font Info:    ... okay on input line 759.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 759.
-LaTeX Font Info:    ... okay on input line 759.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 759.
-LaTeX Font Info:    ... okay on input line 759.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 759.
-LaTeX Font Info:    ... okay on input line 759.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 759.
-LaTeX Font Info:    ... okay on input line 759.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 759.
-LaTeX Font Info:    ... okay on input line 759.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 759.
-LaTeX Font Info:    ... okay on input line 759.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 759.
-LaTeX Font Info:    ... okay on input line 759.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 761.
+LaTeX Font Info:    ... okay on input line 761.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 761.
+LaTeX Font Info:    ... okay on input line 761.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 761.
+LaTeX Font Info:    ... okay on input line 761.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 761.
+LaTeX Font Info:    ... okay on input line 761.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 761.
+LaTeX Font Info:    ... okay on input line 761.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 761.
+LaTeX Font Info:    ... okay on input line 761.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 761.
+LaTeX Font Info:    ... okay on input line 761.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 761.
+LaTeX Font Info:    ... okay on input line 761.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 761.
+LaTeX Font Info:    ... okay on input line 761.
 
 (C:\Users\timH\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
@@ -1926,21 +1926,21 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' not found.
 
 No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 759.
-Package biblatex Info: Reference segment=0 on input line 759.
-Package hyperref Info: Link coloring ON on input line 759.
+Package biblatex Info: Reference section=0 on input line 761.
+Package biblatex Info: Reference segment=0 on input line 761.
+Package hyperref Info: Link coloring ON on input line 761.
 (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Trying to load font information for T1+bch on input line 76
-1.
+3.
 
 (C:\Users\timH\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 )
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 7
-83.
+85.
 
 (C:\Users\timH\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -2005,58 +2005,134 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 {C:/Users/timH/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/timH/
 AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/timH/AppDat
-a/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+a/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/timH/AppData/Loc
+al/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7
-96.
+97.
 
 (C:\Users\timH\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
-21.
+<figures/visualizations/medical_visualization.jpg, id=154, 1027.84pt x 770.88pt
+>
+File: figures/visualizations/medical_visualization.jpg Graphic file (type jpg)
+<use figures/visualizations/medical_visualization.jpg>
+Package pdftex.def Info: figures/visualizations/medical_visualization.jpg  used
+ on input line 809.
+(pdftex.def)             Requested size: 205.56436pt x 154.17326pt.
+<figures/visualizations/01table.png, id=156, 172.14313pt x 248.93pt>
+File: figures/visualizations/01table.png Graphic file (type png)
+<use figures/visualizations/01table.png>
+Package pdftex.def Info: figures/visualizations/01table.png  used on input line
+ 823.
+(pdftex.def)             Requested size: 157.57297pt x 227.85986pt.
+<figures/visualizations/01heatmap.png, id=158, 167.62625pt x 250.43562pt>
+File: figures/visualizations/01heatmap.png Graphic file (type png)
+<use figures/visualizations/01heatmap.png>
+Package pdftex.def Info: figures/visualizations/01heatmap.png  used on input li
+ne 828.
+(pdftex.def)             Requested size: 157.57297pt x 235.41333pt.
+ [2{C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} 
+<./figures/visualizations/medical_visualization.jpg>] [3 <./figures/visualizati
+ons/01table.png> <./figures/visualizations/01heatmap.png>]
+<D:/projecten/syntra/git-repos/data-science-syntra-ab/04 data visualizatie/figu
+res/population.png, id=174, 1156.32pt x 289.08pt>
+File: D:/projecten/syntra/git-repos/data-science-syntra-ab/04 data visualizatie
+/figures/population.png Graphic file (type png)
+<use D:/projecten/syntra/git-repos/data-science-syntra-ab/04 data visualizatie/
+figures/population.png>
+Package pdftex.def Info: D:/projecten/syntra/git-repos/data-science-syntra-ab/0
+4 data visualizatie/figures/population.png  used on input line 879.
+(pdftex.def)             Requested size: 346.89868pt x 86.72466pt.
 
-(C:\Users\timH\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+
+LaTeX Warning: Reference `fig:population_cities_bar' on page 4 undefined on inp
+ut line 882.
+
+<D:/projecten/syntra/git-repos/data-science-syntra-ab/04 data visualizatie/figu
+res/market_shares.png, id=175, 794.97pt x 722.7pt>
+File: D:/projecten/syntra/git-repos/data-science-syntra-ab/04 data visualizatie
+/figures/market_shares.png Graphic file (type png)
+<use D:/projecten/syntra/git-repos/data-science-syntra-ab/04 data visualizatie/
+figures/market_shares.png>
+Package pdftex.def Info: D:/projecten/syntra/git-repos/data-science-syntra-ab/0
+4 data visualizatie/figures/market_shares.png  used on input line 886.
+(pdftex.def)             Requested size: 238.49284pt x 216.81166pt.
+
+LaTeX Warning: Reference `fig:population_cities_bar' on page 4 undefined on inp
+ut line 890.
+
+[4 <D:/projecten/syntra/git-repos/data-science-syntra-ab/04 data visualizatie/f
+igures/population.png> <D:/projecten/syntra/git-repos/data-science-syntra-ab/04
+ data visualizatie/figures/market_shares.png>]
+
+LaTeX Warning: Reference `fig:population_cities_bar' on page 5 undefined on inp
+ut line 910.
+
+[5]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 954.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 954.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 954.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 954.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 954.
+
+[6]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
+89.
+ (C:\Users\timH\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<figures/6.1_integral.png, id=99, 406.8801pt x 298.4751pt>
+<figures/6.1_integral.png, id=196, 406.8801pt x 298.4751pt>
 File: figures/6.1_integral.png Graphic file (type png)
 <use figures/6.1_integral.png>
-Package pdftex.def Info: figures/6.1_integral.png  used on input line 826.
+Package pdftex.def Info: figures/6.1_integral.png  used on input line 994.
 (pdftex.def)             Requested size: 162.74915pt x 119.38792pt.
- [2{C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{
-C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C
-:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Use
-rs/timH/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/User
-s/timH/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] [3 <./f
-igures/6.1_integral.png>]
-<figures/6.5_linear_regression.png, id=135, 425.6703pt x 312.2064pt>
+
+[7{C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc
+}{C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}
+{C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} 
+<./figures/6.1_integral.png>]
+<figures/6.5_linear_regression.png, id=219, 425.6703pt x 312.2064pt>
 File: figures/6.5_linear_regression.png Graphic file (type png)
 <use figures/6.5_linear_regression.png>
 Package pdftex.def Info: figures/6.5_linear_regression.png  used on input line 
-877.
+1045.
 (pdftex.def)             Requested size: 170.26509pt x 124.88034pt.
-<figures/6.5_error_fun.png, id=140, 397.485pt x 298.4751pt>
+ [8]
+<figures/6.5_error_fun.png, id=234, 397.485pt x 298.4751pt>
 File: figures/6.5_error_fun.png Graphic file (type png)
 <use figures/6.5_error_fun.png>
-Package pdftex.def Info: figures/6.5_error_fun.png  used on input line 911.
+Package pdftex.def Info: figures/6.5_error_fun.png  used on input line 1079.
 (pdftex.def)             Requested size: 317.98842pt x 238.7804pt.
- [4 <./figures/6.5_linear_regression.png>] [5 <./figures/6.5_error_fun.png>] (m
-ain.aux)
+ [9 <./figures/6.5_linear_regression.png>]
+[10 <./figures/6.5_error_fun.png>] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AD75FD6D18172ADF6830D8437EBCD1B3;1529.
+(rerunfilecheck)             Checksum: BF1C3ED74D90384D2AA91E089F96F6C3;3447.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 57908 strings out of 476331
- 1333564 string characters out of 5788237
- 2222722 words of memory out of 5000000
- 77275 multiletter control sequences out of 15000+600000
- 568456 words of font info for 75 fonts, out of 8000000 for 9000
+ 58030 strings out of 476331
+ 1337033 string characters out of 5788237
+ 2225335 words of memory out of 5000000
+ 77358 multiletter control sequences out of 15000+600000
+ 587195 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  93i,8n,99p,1970b,2275s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bch
@@ -2066,16 +2142,16 @@ m/lmbx10.pfb><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
 /lmex10.pfb><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
 lmmi10.pfb><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mmi7.pfb><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr
-10.pfb><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.
-pfb><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.p
-fb><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pf
-b><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.p
-fb><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pf
-b><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb
->
-Output written on main.pdf (5 pages, 324190 bytes).
+10.pfb><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12
+.pfb><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pf
+b><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb
+><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb>
+<C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb
+><C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+<C:/Users/timH/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
+Output written on main.pdf (10 pages, 679256 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 334 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 367 words of extra memory for PDF output out of 10000 (max. 10000000)
 
